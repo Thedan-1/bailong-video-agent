@@ -2,11 +2,21 @@
 
 **把视频创作拆成可组合的 Agent、工具与流程。**
 
-> 白龙娘还在整理，核心实现将分批上传。
+> 白龙娘还在整理，代码将按模块逐步开放。
 >
-> 本次先开放工程结构、模块划分、流程配置草案与 Python 包骨架。后续会逐步开放可独立使用的模块，并配套示例与使用文档。
+> 这里先公开项目大纲、制作案例、提示词与流程说明。目录和入口文件先占位，后续逐步补充可独立使用的模块与示例。
 
 从热点选题到素材理解，从音乐分析到剪辑规划，再到成片输出，Bailong Video Agent 围绕创作中的不同任务划分模块。可以从热点发现开始，也可以跳过这一步，直接带着素材和想法进入创作流程。
+
+## 已公开的制作案例
+
+### 01 · 《双城之战》32 秒群像卡点
+
+围绕《life force》的音乐起音组织人物出场，用交错叠框、动作衔接、英文短句与原声混音完成 32 秒群像短片。
+
+**[阅读案例：可复用提示词、六步流程与实际工具](docs/cases/arcane-life-force.md)**
+
+成片规格：3840×2160 / 60fps / 32.33 秒。案例从用户素材开始，直接进入素材与音乐分析，跳过热点发现。
 
 ## 流程设计
 
@@ -69,18 +79,9 @@ bailong-video-agent/
 
 采用 monorepo 组织方式，当前 Python 库集中在 `packages/bailong-video`；应用入口、流程配置和文档在同一仓库维护。
 
-## 安装当前包骨架
+## 代码开放方式
 
-需要 Python 3.10 或以上版本：
-
-```bash
-git clone https://github.com/Thedan-1/bailong-video-agent.git
-cd bailong-video-agent
-python -m pip install .
-python -c "import bailong_video; print('bailong_video imported')"
-```
-
-当前安装内容为包骨架，不包含核心执行实现或可运行的剪辑命令。完整调用示例会随对应模块上传，暂不提供 PyPI 安装入口。
+当前以项目说明和制作方法分享为主，Python 文件保留结构与入口。包骨架的安装配置见 [packages/bailong-video](packages/bailong-video/README.md)；具体工具的安装与调用方式会随对应代码一同发布。
 
 ## 从哪里开始阅读
 
