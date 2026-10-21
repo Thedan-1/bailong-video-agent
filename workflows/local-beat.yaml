@@ -1,0 +1,33 @@
+# Declarative design draft; no executor is included in this snapshot.
+schema_version: "0.1-draft"
+name: local-beat
+entry: user_assets
+route: beat
+inputs:
+  assets_manifest: examples/assets.json
+  reference_manifest: examples/references.json
+  bgm: "./data/bgm/track.wav"
+  brief: "角色群像、动作衔接，重点对齐主要音乐落点"
+  target_duration_seconds: 32
+  aspect_ratio: "16:9"
+stages:
+  trends:
+    enabled: false
+  media_search:
+    enabled: false
+  media_catalog:
+    enabled: true
+  reference_learning:
+    enabled: true
+  intent:
+    enabled: true
+  audio:
+    enabled: true
+    tools: [structure, beats, kick, frequency]
+    optional_tools: [instruments, separation]
+  editing:
+    strategy: beat
+  render:
+    enabled: true
+outputs:
+  workspace: "./outputs/local-beat"

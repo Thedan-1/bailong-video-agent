@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1-draft",
+  "references": [
+    {
+      "id": "reference-001",
+      "path": "./data/references/reference-001.mp4",
+      "analysis_only": true,
+      "focus": [
+        "shot_duration",
+        "music_alignment",
+        "transitions"
+      ],
+      "notes": "填写希望学习的剪辑特点；参考文件不默认作为片源"
+    }
+  ]
+}

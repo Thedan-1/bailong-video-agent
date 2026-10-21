@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bailong-video-agent"
+version = "0.0.1"
+description = "Modular video-agent workspace: package scaffold and workflow design."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "Thedan-1"}]
+keywords = ["video", "agent", "workflow", "editing", "bailong"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Multimedia :: Video",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/Thedan-1/bailong-video-agent"
+Repository = "https://github.com/Thedan-1/bailong-video-agent"
+Issues = "https://github.com/Thedan-1/bailong-video-agent/issues"
+
+[tool.setuptools]
+package-dir = {"" = "packages/bailong-video/src"}
+
+[tool.setuptools.packages.find]
+where = ["packages/bailong-video/src"]
+include = ["bailong_video*"]

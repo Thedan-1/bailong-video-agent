@@ -1,0 +1,33 @@
+# Declarative design draft; no executor is included in this snapshot.
+schema_version: "0.1-draft"
+name: local-story
+entry: user_assets
+route: story
+inputs:
+  assets_manifest: examples/assets.json
+  reference_manifest: examples/references.json
+  brief: "以角色经历为主线，组织起因、转折与结尾"
+  target_duration_seconds: 180
+  aspect_ratio: "16:9"
+stages:
+  trends:
+    enabled: false
+  media_search:
+    enabled: false
+  media_catalog:
+    enabled: true
+  reference_learning:
+    enabled: true
+  intent:
+    enabled: true
+  audio:
+    enabled: false
+  story:
+    enabled: true
+    focus: [events, narrative, voiceover]
+  editing:
+    strategy: story
+  render:
+    enabled: true
+outputs:
+  workspace: "./outputs/local-story"

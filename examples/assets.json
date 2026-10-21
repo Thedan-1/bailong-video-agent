@@ -1,0 +1,16 @@
+{
+  "schema_version": "0.1-draft",
+  "assets": [
+    {
+      "id": "asset-001",
+      "path": "./data/clips/clip-001.mp4",
+      "source": {
+        "kind": "user_provided",
+        "url": null,
+        "credit": "填写素材来源与署名",
+        "license": "填写实际许可或使用依据"
+      },
+      "notes": "填写角色、事件或希望保留的镜头"
+    }
+  ]
+}

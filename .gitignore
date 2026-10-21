@@ -1,0 +1,39 @@
+# Python / local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Credentials / machine-specific files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Local source media, generated indexes, projects, and exports
+data/
+downloads/
+cache/
+outputs/
+exports/
+*.mp4
+*.mov
+*.mkv
+*.avi
+*.webm
+*.mp3
+*.wav
+*.flac

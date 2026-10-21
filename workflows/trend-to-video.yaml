@@ -1,0 +1,37 @@
+# Declarative design draft; no executor is included in this snapshot.
+schema_version: "0.1-draft"
+name: trend-to-video
+entry: topic_discovery
+route: beat
+inputs:
+  seed_topic: "填写你关注的主题"
+  source_allowlist: []
+  reference_manifest: examples/references.json
+  bgm: "./data/bgm/track.wav"
+  brief: "根据选题形成创作需求，再选择素材与剪辑方案"
+  target_duration_seconds: 60
+  aspect_ratio: "16:9"
+stages:
+  trends:
+    enabled: true
+    window_hours: 72
+    selection: user
+  media_search:
+    enabled: true
+    preserve_sources: true
+  media_catalog:
+    enabled: true
+  reference_learning:
+    enabled: true
+  intent:
+    enabled: true
+  audio:
+    enabled: true
+    tools: [structure, beats, kick, frequency]
+    optional_tools: [instruments, separation]
+  editing:
+    strategy: beat
+  render:
+    enabled: true
+outputs:
+  workspace: "./outputs/trend-to-video"
