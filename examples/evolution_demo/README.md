@@ -3,7 +3,7 @@
 这不是依赖剪映的工程。把本地视频复制到 `MEDIA/`，按 `assets.example.json` 填写路径和时间点，再运行：
 
 ```powershell
-python -m bailong_video.demo `
+python apps/render_demo.py `
   --brief examples/evolution_demo/prompt.md `
   --manifest examples/evolution_demo/assets.example.json `
   --output outputs/evolution-demo.mp4
