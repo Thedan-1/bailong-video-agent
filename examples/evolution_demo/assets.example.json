@@ -1,0 +1,13 @@
+{
+  "duration": 8,
+  "canvas": {"width": 1920, "height": 1080, "fps": 60},
+  "background": "090b12",
+  "beats": [0.00, 0.52, 1.04, 1.56, 2.08, 2.60, 3.12, 3.64, 4.16, 4.68, 5.20, 5.72, 6.24, 6.76, 7.28],
+  "segments": [
+    {"path": "MEDIA/hero.mp4", "start": 0.0, "at": 0.0, "duration": 8.0, "x": 0, "y": 0, "w": 1920, "h": 1080, "label": "EVOLUTION", "font_size": 88, "text_x": 80, "text_y": 890},
+    {"path": "MEDIA/detail_a.mp4", "start": 0.4, "at": 1.04, "duration": 1.65, "x": 1180, "y": 78, "w": 620, "h": 350, "rotation": -3},
+    {"path": "MEDIA/detail_b.mp4", "start": 0.2, "at": 2.60, "duration": 1.40, "x": 92, "y": 630, "w": 560, "h": 315, "rotation": 2},
+    {"path": "MEDIA/detail_c.mp4", "start": 0.6, "at": 4.16, "duration": 1.45, "x": 1330, "y": 620, "w": 470, "h": 265, "rotation": 2},
+    {"path": "MEDIA/detail_d.mp4", "start": 0.0, "at": 5.72, "duration": 1.55, "x": 730, "y": 90, "w": 490, "h": 275, "rotation": -2}
+  ]
+}

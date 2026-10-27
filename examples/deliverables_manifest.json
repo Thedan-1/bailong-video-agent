@@ -1,0 +1,32 @@
+{
+  "project": "白龙娘·双城之战视觉剪辑",
+  "policy": "repository_contains_recipes_only",
+  "confirmed_deliverables": [
+    {
+      "name": "EVOLUTION",
+      "video_4k": "视频创作/双城之战-视觉四版/成片/04-进化边界-v16定稿-原片4K.mp4",
+      "video_preview": "视频创作/双城之战-视觉四版/成片/04-进化边界-纯音乐有序切分-v16.mp4",
+      "posters": [
+        "视频创作/双城之战-视觉四版/定稿海报/EVOLUTION-16比9-首页封面-v2.png",
+        "视频创作/双城之战-视觉四版/定稿海报/EVOLUTION-4比3-首页封面-v2.png",
+        "视频创作/双城之战-视觉四版/定稿海报/EVOLUTION-3比4-首页封面-v2.png"
+      ],
+      "prompt": "prompts/poster-evolution.md",
+      "timeline": "视频创作/双城之战-视觉四版/纯音乐有序切分-v16/时间线.json"
+    },
+    {
+      "name": "JINX_DNA_RED_BLACK",
+      "video": "视频创作/双城之战-视觉四版/成片/02-金克丝DNA-红黑拼贴.mp4",
+      "status": "confirmed_video_needs_final_resolution_audit"
+    }
+  ],
+  "optional_candidates": [
+    "视频创作/双城之战-黑白冲击/双城之战-TAKE-ME-23秒收尾-v14-FEEL卡点.mp4",
+    "视频创作/双城之战-动作衔接-BV1UbYP6yEYC/双城之战-BET-ON-ME-v7-原素材4K重渲染.mp4",
+    "视频创作/双城之战-逐音叠框/成片-4K/双城之战-全员英文短句-4K.mp4"
+  ],
+  "external_storage": {
+    "url": "",
+    "note": "填写网盘或对象存储链接；不要把整季原片、完整 BGM 或账号凭据提交到 GitHub。"
+  }
+}

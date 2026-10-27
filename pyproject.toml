@@ -23,6 +23,9 @@ classifiers = [
 ]
 dependencies = []
 
+[project.scripts]
+bailong-demo = "bailong_video.demo:main"
+
 [project.urls]
 Homepage = "https://github.com/Thedan-1/bailong-video-agent"
 Repository = "https://github.com/Thedan-1/bailong-video-agent"

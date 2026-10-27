@@ -4,7 +4,7 @@
 
 > 白龙娘还在整理，后续会分享部分独立工具与示例。
 >
-> 这里公开完整的模块划分、制作案例、提示词与流程说明。目录展示整体设计，代码选择性开放；目录和入口文件目前先占位。
+> 这里公开完整的模块划分、制作案例、提示词与流程说明。核心渲染 Demo 已经可以用一份提示词和一份本地素材清单一次运行生成，不依赖剪映。
 
 从热点选题到素材理解，从音乐分析到剪辑规划，再到成片输出，Bailong Video Agent 围绕创作中的不同任务划分模块。可以从热点发现开始，也可以跳过这一步，直接带着素材和想法进入创作流程。
 
@@ -17,6 +17,10 @@
 **[阅读案例：可复用提示词、六步流程与实际工具](docs/cases/arcane-life-force.md)**
 
 成片规格：3840×2160 / 60fps / 32.33 秒。案例从用户素材开始，直接进入素材与音乐分析，跳过热点发现。
+
+### 02 · EVOLUTION 一次运行 Demo
+
+参见 [EVOLUTION 案例](docs/cases/evolution.md) 和 [Demo 输入](examples/evolution_demo/README.md)。渲染入口是 `bailong_video.demo`，输入为自然语言提示词、素材清单和本地素材；渲染由 FFmpeg 确定性完成。
 
 ## 流程设计
 
@@ -87,7 +91,7 @@ bailong-video-agent/
 
 ## 代码开放方式
 
-当前以项目说明和制作方法分享为主，Python 文件保留结构与入口。包骨架的安装配置见 [packages/bailong-video](packages/bailong-video/README.md)；具体工具的安装与调用方式会随对应代码一同发布。
+当前以项目说明、制作方法和可复现 Demo 为主。包骨架的安装配置见 [packages/bailong-video](packages/bailong-video/README.md)；具体工具的安装与调用方式会随对应代码一同发布。
 
 | 内容 | 公开方式 |
 | --- | --- |
